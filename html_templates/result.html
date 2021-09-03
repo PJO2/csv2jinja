@@ -1,0 +1,20 @@
+<html>
+<body>
+content is :
+{{ data }}
+<hr>
+</br>
+<table>
+<tr><th>name</th><th>department</th><th>office</th></tr>
+{% for row in data %}
+<tr>
+<td> {{  row["name"]   }}</td>
+<td> {{  row["department"]   }}</td>
+<td> {{  row["place"]   }}</td>
+</tr>
+{% endfor %}
+</table>
+<hr>
+</body>
+</html>
+
